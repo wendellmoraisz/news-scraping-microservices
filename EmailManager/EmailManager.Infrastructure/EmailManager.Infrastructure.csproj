@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\EmailManager.Application\EmailManager.Application.csproj" />
+      <ProjectReference Include="..\EmailManager.Core\EmailManager.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="8.0.0" />
+    </ItemGroup>
+
+</Project>
