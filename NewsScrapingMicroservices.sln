@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{DC4FE75C-E925-4B16-B54D-05DB674B692F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EmailManager", "EmailManager", "{0ED91AA8-59BB-49CF-95A3-1F9E55446C13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.API", "EmailManager\EmailManager.API\EmailManager.API.csproj", "{44A79AFB-9BF1-4919-8D5A-904A30AC7786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.Core", "EmailManager\EmailManager.Core\EmailManager.Core.csproj", "{AC3991CD-6E6B-4BD2-A080-581B93D035A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.Application", "EmailManager\EmailManager.Application\EmailManager.Application.csproj", "{4CC95DF4-07C8-45CE-8762-2162E3350BF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.Infrastructure", "EmailManager\EmailManager.Infrastructure\EmailManager.Infrastructure.csproj", "{CA91D8C6-3EAD-4554-9CA9-E33B810606B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0ED91AA8-59BB-49CF-95A3-1F9E55446C13} = {DC4FE75C-E925-4B16-B54D-05DB674B692F}
+		{44A79AFB-9BF1-4919-8D5A-904A30AC7786} = {0ED91AA8-59BB-49CF-95A3-1F9E55446C13}
+		{AC3991CD-6E6B-4BD2-A080-581B93D035A7} = {0ED91AA8-59BB-49CF-95A3-1F9E55446C13}
+		{4CC95DF4-07C8-45CE-8762-2162E3350BF2} = {0ED91AA8-59BB-49CF-95A3-1F9E55446C13}
+		{CA91D8C6-3EAD-4554-9CA9-E33B810606B9} = {0ED91AA8-59BB-49CF-95A3-1F9E55446C13}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44A79AFB-9BF1-4919-8D5A-904A30AC7786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A79AFB-9BF1-4919-8D5A-904A30AC7786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A79AFB-9BF1-4919-8D5A-904A30AC7786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A79AFB-9BF1-4919-8D5A-904A30AC7786}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC3991CD-6E6B-4BD2-A080-581B93D035A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC3991CD-6E6B-4BD2-A080-581B93D035A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC3991CD-6E6B-4BD2-A080-581B93D035A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC3991CD-6E6B-4BD2-A080-581B93D035A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC95DF4-07C8-45CE-8762-2162E3350BF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC95DF4-07C8-45CE-8762-2162E3350BF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC95DF4-07C8-45CE-8762-2162E3350BF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC95DF4-07C8-45CE-8762-2162E3350BF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA91D8C6-3EAD-4554-9CA9-E33B810606B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA91D8C6-3EAD-4554-9CA9-E33B810606B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA91D8C6-3EAD-4554-9CA9-E33B810606B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA91D8C6-3EAD-4554-9CA9-E33B810606B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
