@@ -1,36 +1,36 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{DC4FE75C-E925-4B16-B54D-05DB674B692F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EmailManager", "EmailManager", "{0ED91AA8-59BB-49CF-95A3-1F9E55446C13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.API", "EmailManager\EmailManager.API\EmailManager.API.csproj", "{44A79AFB-9BF1-4919-8D5A-904A30AC7786}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.API", "Services\EmailManager\EmailManager.API\EmailManager.API.csproj", "{44A79AFB-9BF1-4919-8D5A-904A30AC7786}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.Core", "EmailManager\EmailManager.Core\EmailManager.Core.csproj", "{AC3991CD-6E6B-4BD2-A080-581B93D035A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.Core", "Services\EmailManager\EmailManager.Core\EmailManager.Core.csproj", "{AC3991CD-6E6B-4BD2-A080-581B93D035A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.Application", "EmailManager\EmailManager.Application\EmailManager.Application.csproj", "{4CC95DF4-07C8-45CE-8762-2162E3350BF2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.Application", "Services\EmailManager\EmailManager.Application\EmailManager.Application.csproj", "{4CC95DF4-07C8-45CE-8762-2162E3350BF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.Infrastructure", "EmailManager\EmailManager.Infrastructure\EmailManager.Infrastructure.csproj", "{CA91D8C6-3EAD-4554-9CA9-E33B810606B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManager.Infrastructure", "Services\EmailManager\EmailManager.Infrastructure\EmailManager.Infrastructure.csproj", "{CA91D8C6-3EAD-4554-9CA9-E33B810606B9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EmailSender", "EmailSender", "{8AE11393-6C86-40A1-8696-93ECFEBFFB10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.Core", "EmailSender\EmailSender.Core\EmailSender.Core.csproj", "{B7E9548A-9C95-463B-BBEC-1F99871BEC83}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.Core", "Services\EmailSender\EmailSender.Core\EmailSender.Core.csproj", "{B7E9548A-9C95-463B-BBEC-1F99871BEC83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.Infrastructure", "EmailSender\EmailSender.Infrastructure\EmailSender.Infrastructure.csproj", "{7477FED0-166D-4420-BF97-C7702E255ACB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.Infrastructure", "Services\EmailSender\EmailSender.Infrastructure\EmailSender.Infrastructure.csproj", "{7477FED0-166D-4420-BF97-C7702E255ACB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.Application", "EmailSender\EmailSender.Application\EmailSender.Application.csproj", "{35435203-A455-4B6A-A6BB-21AF54F45DE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.Application", "Services\EmailSender\EmailSender.Application\EmailSender.Application.csproj", "{35435203-A455-4B6A-A6BB-21AF54F45DE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.API", "EmailSender\EmailSender.API\EmailSender.API.csproj", "{514ECA21-58E2-4B53-B976-B85BD6A2E035}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.API", "Services\EmailSender\EmailSender.API\EmailSender.API.csproj", "{514ECA21-58E2-4B53-B976-B85BD6A2E035}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebScraper", "WebScraper", "{801C0B3B-0894-480C-8699-039B65574990}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraper.API", "WebScraper\WebScraper.API\WebScraper.API.csproj", "{AF1A429E-C88D-4D60-965A-A60339E88D7D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraper.API", "Services\WebScraper\WebScraper.API\WebScraper.API.csproj", "{AF1A429E-C88D-4D60-965A-A60339E88D7D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraper.Application", "WebScraper\WebScraper.Application\WebScraper.Application.csproj", "{9E7FBE43-3635-4D1B-B84C-FC778A212109}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraper.Application", "Services\WebScraper\WebScraper.Application\WebScraper.Application.csproj", "{9E7FBE43-3635-4D1B-B84C-FC778A212109}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraper.Infrastructure", "WebScraper\WebScraper.Infrastructure\WebScraper.Infrastructure.csproj", "{7826F403-4CFD-456E-83E8-42A06FE2C736}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraper.Infrastructure", "Services\WebScraper\WebScraper.Infrastructure\WebScraper.Infrastructure.csproj", "{7826F403-4CFD-456E-83E8-42A06FE2C736}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraper.Core", "WebScraper\WebScraper.Core\WebScraper.Core.csproj", "{F928F709-DC02-4CDF-85A3-3F70596A8630}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebScraper.Core", "Services\WebScraper\WebScraper.Core\WebScraper.Core.csproj", "{F928F709-DC02-4CDF-85A3-3F70596A8630}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{45C24E23-B5B4-4973-AB3A-B6AC39601D43}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,21 +38,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0ED91AA8-59BB-49CF-95A3-1F9E55446C13} = {DC4FE75C-E925-4B16-B54D-05DB674B692F}
 		{44A79AFB-9BF1-4919-8D5A-904A30AC7786} = {0ED91AA8-59BB-49CF-95A3-1F9E55446C13}
 		{AC3991CD-6E6B-4BD2-A080-581B93D035A7} = {0ED91AA8-59BB-49CF-95A3-1F9E55446C13}
 		{4CC95DF4-07C8-45CE-8762-2162E3350BF2} = {0ED91AA8-59BB-49CF-95A3-1F9E55446C13}
 		{CA91D8C6-3EAD-4554-9CA9-E33B810606B9} = {0ED91AA8-59BB-49CF-95A3-1F9E55446C13}
-		{8AE11393-6C86-40A1-8696-93ECFEBFFB10} = {DC4FE75C-E925-4B16-B54D-05DB674B692F}
 		{B7E9548A-9C95-463B-BBEC-1F99871BEC83} = {8AE11393-6C86-40A1-8696-93ECFEBFFB10}
 		{7477FED0-166D-4420-BF97-C7702E255ACB} = {8AE11393-6C86-40A1-8696-93ECFEBFFB10}
 		{35435203-A455-4B6A-A6BB-21AF54F45DE0} = {8AE11393-6C86-40A1-8696-93ECFEBFFB10}
 		{514ECA21-58E2-4B53-B976-B85BD6A2E035} = {8AE11393-6C86-40A1-8696-93ECFEBFFB10}
-		{801C0B3B-0894-480C-8699-039B65574990} = {DC4FE75C-E925-4B16-B54D-05DB674B692F}
 		{AF1A429E-C88D-4D60-965A-A60339E88D7D} = {801C0B3B-0894-480C-8699-039B65574990}
 		{9E7FBE43-3635-4D1B-B84C-FC778A212109} = {801C0B3B-0894-480C-8699-039B65574990}
 		{7826F403-4CFD-456E-83E8-42A06FE2C736} = {801C0B3B-0894-480C-8699-039B65574990}
 		{F928F709-DC02-4CDF-85A3-3F70596A8630} = {801C0B3B-0894-480C-8699-039B65574990}
+		{801C0B3B-0894-480C-8699-039B65574990} = {45C24E23-B5B4-4973-AB3A-B6AC39601D43}
+		{8AE11393-6C86-40A1-8696-93ECFEBFFB10} = {45C24E23-B5B4-4973-AB3A-B6AC39601D43}
+		{0ED91AA8-59BB-49CF-95A3-1F9E55446C13} = {45C24E23-B5B4-4973-AB3A-B6AC39601D43}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{44A79AFB-9BF1-4919-8D5A-904A30AC7786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
