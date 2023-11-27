@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="HtmlAgilityPack" Version="1.11.54" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\WebScraper.Application\WebScraper.Application.csproj" />
+      <ProjectReference Include="..\WebScraper.Core\WebScraper.Core.csproj" />
+    </ItemGroup>
+
+</Project>
