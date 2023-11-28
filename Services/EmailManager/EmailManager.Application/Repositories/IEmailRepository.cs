@@ -6,4 +6,5 @@ public interface IEmailRepository
 {
     Task<Email?> GetByAddress(string emailAddress, CancellationToken cancellationToken);
     Task<Email> CreateEmail(Email email, CancellationToken cancellationToken);
+    Task<List<Email>> GetAll(CancellationToken cancellationToken);
 }

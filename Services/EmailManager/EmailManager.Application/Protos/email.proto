@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "EmailManager.Grpc.Protos";
+
+service EmailProtoService {
+  rpc GetEmailsAddress(Empty) returns (GetAllEmailsResponse);
+}
+
+message Empty {}
+
+message EmailModel {
+  string address = 1;
+}
+
+message GetAllEmailsResponse {
+  repeated EmailModel emails = 1;
+}

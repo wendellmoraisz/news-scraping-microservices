@@ -27,5 +27,13 @@ public class EmailRepository : IEmailRepository
         await _context.Emails.InsertOneAsync(email, cancellationToken);
         return email;
     }
-    
+
+    public async Task<List<Email>> GetAll(CancellationToken cancellationToken)
+    {
+        var emails = await _context
+            .Emails
+            .FindAsync(_ => true, cancellationToken: cancellationToken);
+        
+        return emails.ToList(cancellationToken: cancellationToken);
+    }
 }

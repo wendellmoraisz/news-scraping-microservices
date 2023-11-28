@@ -1,14 +1,20 @@
-using Microsoft.AspNetCore.Diagnostics.HealthChecks;
+using System.Reflection;
+using EmailManager.API.Services;
+using EmailManager.Application.Repositories;
+using EmailManager.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddAuthorization();
+builder.Services.AddScoped<IEmailRepository, EmailRepository>();
+builder.Services.AddMediatR(cfg =>
+{
+    cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
+});
+builder.Services.AddGrpc();
 
 var app = builder.Build();
-
-// app.MapGet("/", () => "Hello World!");
-//
 
 if (app.Environment.IsDevelopment())
 {
@@ -18,6 +24,14 @@ if (app.Environment.IsDevelopment())
 app.UseRouting();
 app.UseStaticFiles();
 app.UseAuthorization();
-app.UseEndpoints(endpoints => endpoints.MapControllers());
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGrpcService<EmailService>();
+    endpoints.MapGet("/", async context =>
+    {
+        await context.Response.WriteAsync(
+            "Communication with gRPC endpoints must be made through a gRPC client.");
+    });
+});
 
 app.Run();
