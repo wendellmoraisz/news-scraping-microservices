@@ -14,7 +14,7 @@ public class EmailService : EmailProtoService.EmailProtoServiceBase
         _mediator = mediator;
     }
 
-    public override async Task<GetAllEmailsResponse> GetEmailsAddress(Empty request, ServerCallContext context)
+    public override async Task<GetAllEmailsResponse> GetAllEmails(Empty request, ServerCallContext context)
     {
         var cancellationTokenSource = new CancellationTokenSource();
         var cancelTimeout = TimeSpan.FromSeconds(30);

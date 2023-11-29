@@ -3,7 +3,7 @@ syntax = "proto3";
 option csharp_namespace = "EmailManager.Grpc.Protos";
 
 service EmailProtoService {
-  rpc GetEmailsAddress(Empty) returns (GetAllEmailsResponse);
+  rpc GetAllEmails(Empty) returns (GetAllEmailsResponse);
 }
 
 message Empty {}
