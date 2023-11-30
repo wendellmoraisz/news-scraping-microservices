@@ -15,4 +15,13 @@
       <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.0" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="obj\Debug\net7.0\EmailSender.Infrastructure.csproj.AssemblyReference.cache" />
+      <Content Include="obj\Debug\net7.0\EmailSender.Infrastructure.csproj.CopyComplete" />
+      <Content Include="obj\Debug\net7.0\EmailSender.Infrastructure.csproj.CoreCompileInputs.cache" />
+      <Content Include="obj\Debug\net7.0\EmailSender.Infrastructure.csproj.FileListAbsolute.txt" />
+      <Content Include="obj\Debug\net7.0\EmailSender.Infrastructure.dll" />
+      <Content Include="obj\Debug\net7.0\EmailSender.Infrastructure.pdb" />
+    </ItemGroup>
+
 </Project>

@@ -6,4 +6,11 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Content Include="obj\Debug\net7.0\EmailSender.Core.csproj.FileListAbsolute.txt" />
+      <Content Include="obj\Debug\net7.0\EmailSender.Core.dll" />
+      <Content Include="obj\Debug\net7.0\EmailSender.Core.pdb" />
+      <Content Include="obj\rider.project.model.nuget.info" />
+    </ItemGroup>
+
 </Project>

@@ -11,6 +11,15 @@
       <Content Include="..\..\.dockerignore">
         <Link>.dockerignore</Link>
       </Content>
+      <Content Include="obj\Debug\net7.0\apphost" />
+      <Content Include="obj\Debug\net7.0\EmailSender.API.csproj.CopyComplete" />
+      <Content Include="obj\Debug\net7.0\EmailSender.API.csproj.CoreCompileInputs.cache" />
+      <Content Include="obj\Debug\net7.0\EmailSender.API.csproj.FileListAbsolute.txt" />
+      <Content Include="obj\Debug\net7.0\EmailSender.API.dll" />
+      <Content Include="obj\Debug\net7.0\EmailSender.API.genruntimeconfig.cache" />
+      <Content Include="obj\Debug\net7.0\EmailSender.API.MvcApplicationPartsAssemblyInfo.cache" />
+      <Content Include="obj\Debug\net7.0\EmailSender.API.pdb" />
+      <Content Include="obj\Debug\net7.0\staticwebassets.build.json" />
     </ItemGroup>
 
     <ItemGroup>

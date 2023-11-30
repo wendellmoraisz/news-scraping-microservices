@@ -5,10 +5,14 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 WORKDIR /src
-COPY ["EmailSender/EmailSender.API/EmailSender.API.csproj", "EmailSender/EmailSender.API/"]
-RUN dotnet restore "EmailSender/EmailSender.API/EmailSender.API.csproj"
+COPY ["Services/EmailSender/EmailSender.API/EmailSender.API.csproj", "Services/EmailSender/EmailSender.API/"]
+COPY ["Services/EmailSender/EmailSender.Application/EmailSender.Application.csproj", "Services/EmailSender/EmailSender.Application/"]
+COPY ["Services/EmailSender/EmailSender.Core/EmailSender.Core.csproj", "Services/EmailSender/EmailSender.Core/"]
+COPY ["Services/EmailSender/EmailSender.Infrastructure/EmailSender.Infrastructure.csproj", "Services/EmailSender/EmailSender.Infrastructure/"]
+
+RUN dotnet restore "Services/EmailSender/EmailSender.API/EmailSender.API.csproj"
 COPY . .
-WORKDIR "/src/EmailSender/EmailSender.API"
+WORKDIR "/src/Services/EmailSender/EmailSender.API"
 RUN dotnet build "EmailSender.API.csproj" -c Release -o /app/build
 
 FROM build AS publish
