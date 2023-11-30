@@ -9,6 +9,7 @@ COPY ["Services/EmailManager/EmailManager.API/EmailManager.API.csproj", "Service
 COPY ["Services/EmailManager/EmailManager.Application/EmailManager.Application.csproj", "Services/EmailManager/EmailManager.Application/"]
 COPY ["Services/EmailManager/EmailManager.Core/EmailManager.Core.csproj", "Services/EmailManager/EmailManager.Core/"]
 COPY ["Services/EmailManager/EmailManager.Infrastructure/EmailManager.Infrastructure.csproj", "Services/EmailManager/EmailManager.Infrastructure/"]
+
 RUN dotnet restore "Services/EmailManager/EmailManager.API/EmailManager.API.csproj"
 COPY . .
 WORKDIR "/src/Services/EmailManager/EmailManager.API"
