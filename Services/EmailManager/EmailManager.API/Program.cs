@@ -1,18 +1,25 @@
 using System.Reflection;
 using EmailManager.API.Services;
 using EmailManager.Application.Repositories;
+using EmailManager.Infrastructure.Data;
 using EmailManager.Infrastructure.Repositories;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddAuthorization();
+builder.Services.AddScoped<IEmailContext, EmailContext>();
 builder.Services.AddScoped<IEmailRepository, EmailRepository>();
 builder.Services.AddMediatR(cfg =>
 {
     cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
 });
 builder.Services.AddGrpc();
+
+builder.Services.AddHealthChecks()
+    .AddMongoDb(builder.Configuration["DatabaseSettings:ConnectionString"], "Emails Mongo Db Health Check",
+        HealthStatus.Degraded);
 
 var app = builder.Build();
 
