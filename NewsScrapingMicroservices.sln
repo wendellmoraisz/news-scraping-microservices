@@ -34,6 +34,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{45
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A92412CF-0A07-452C-9DCF-EF3F436F8FA8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{AB854852-FEE8-4EBA-96E5-A4B9F8CA1B7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Messages", "Infrastructure\EventBus.Messages\EventBus.Messages.csproj", "{87541107-CCA2-4F14-8E56-78BD76714EFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +59,7 @@ Global
 		{801C0B3B-0894-480C-8699-039B65574990} = {45C24E23-B5B4-4973-AB3A-B6AC39601D43}
 		{8AE11393-6C86-40A1-8696-93ECFEBFFB10} = {45C24E23-B5B4-4973-AB3A-B6AC39601D43}
 		{0ED91AA8-59BB-49CF-95A3-1F9E55446C13} = {45C24E23-B5B4-4973-AB3A-B6AC39601D43}
+		{87541107-CCA2-4F14-8E56-78BD76714EFC} = {AB854852-FEE8-4EBA-96E5-A4B9F8CA1B7D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{44A79AFB-9BF1-4919-8D5A-904A30AC7786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -105,5 +110,9 @@ Global
 		{F928F709-DC02-4CDF-85A3-3F70596A8630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F928F709-DC02-4CDF-85A3-3F70596A8630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F928F709-DC02-4CDF-85A3-3F70596A8630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87541107-CCA2-4F14-8E56-78BD76714EFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87541107-CCA2-4F14-8E56-78BD76714EFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87541107-CCA2-4F14-8E56-78BD76714EFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87541107-CCA2-4F14-8E56-78BD76714EFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
