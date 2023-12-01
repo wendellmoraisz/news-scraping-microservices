@@ -1,0 +1,52 @@
+services:
+  emailsdb:
+    container_name: emailsdb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+        
+  newsdb:
+    container_name: newsdb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "password=s3nh4?!!"
+    ports:
+      - "6379:6379"
+  
+  emailsmanager.api:
+    container_name: emailsmanager.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "DatabaseSettings__ConnectionString=mongodb://emailsdb:27017"
+      - "DatabaseSettings__Database=EmailsDb"
+      - "DatabaseSettings__CollectionName=Emails"
+      - "ElasticConfiguration__Uri=http://elasticsearch:9200"
+    depends_on:
+      - emailsdb
+    ports:
+      - "9000:80"
+        
+  webscraper.api:
+    container_name: webscraper.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - "ConnectionStrings__NewsDatabase=server=newsdb;database=news_scraping;user=root;password=s3nh4?!!"
+      - "GrpcSettings__EmailUrl=http://emailsmanager.api"
+    depends_on:
+      - newsdb
+    ports:
+      - "9001:80"
+        
+  emailsender.api:
+    container_name: emailsender.api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - SmtpOptions__SenderCredentials__Email=email
+      - SmtpOptions__SenderCredentials__Password=password
+      - SmtpOptions__Host=smtphost
+      - SmtpOptions__Port=PORT
+      - SmtpOptions__EnableSsl=true
+    ports:
+      - "9002:80"

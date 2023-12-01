@@ -1,0 +1,30 @@
+version: '3.4'
+
+services:
+  emailsdb:
+    image: mongo
+    
+  newsdb:
+    image: mysql
+    
+  emailsmanager.api:
+    image: ${DOCKER_REGISTRY-}emailsmanagerapi
+    build:
+      context: .
+      dockerfile: Services/EmailManager/EmailManager.API/Dockerfile
+      
+  webscraper.api:
+    image: ${DOCKER_REGISTRY-}newsscrapingapi
+    build:
+      context: .
+      dockerfile: Services/WebScraper/WebScraper.API/Dockerfile
+      
+  emailsender.api:
+    image: ${DOCKER_REGISTRY-}emailsenderapi
+    build:
+      context: .
+      dockerfile: Services/EmailSender/EmailSender.API/Dockerfile
+      
+volumes:
+  mongo_data:
+  mysql_data:
