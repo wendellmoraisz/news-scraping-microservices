@@ -10,4 +10,14 @@
       <ProjectReference Include="..\WebScraper.Core\WebScraper.Core.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Grpc.AspNetCore" Version="2.59.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Protobuf Include="..\..\EmailManager\EmailManager.Application\Protos\email.proto" GrpcServices="Client">
+            <Link>Protos\email.proto</Link>
+        </Protobuf>
+    </ItemGroup>
+    
 </Project>

@@ -1,6 +1,8 @@
+using EmailManager.Grpc.Protos;
 using Quartz;
 using WebScraper.Application.ScheduledJobs;
 using WebScraper.Application.Services;
+using WebScraper.Application.Services.GrpcServices;
 using WebScraper.Infrastructure;
 using WebScraper.Infrastructure.Services;
 
@@ -9,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IScrapingService,ScrapingService>();
 builder.Services.ConfigureScheduledJobs();
 builder.Services.ConfigurePersistence(builder.Configuration);
+builder.Services.AddScoped<EmailManagerGrpcService>();
+builder.Services.AddGrpcClient<EmailProtoService.EmailProtoServiceClient>
+    (o => o.Address = new Uri(builder.Configuration["GrpcSettings:EmailUrl"] ?? string.Empty));
 
 var app = builder.Build();
 
