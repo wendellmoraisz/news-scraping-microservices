@@ -4,9 +4,18 @@ using EmailManager.Application.Repositories;
 using EmailManager.Application.UseCases.GetAllEmails;
 using EmailManager.Infrastructure.Data;
 using EmailManager.Infrastructure.Repositories;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ConfigureEndpointDefaults(listenOptions =>
+    {
+        listenOptions.Protocols = HttpProtocols.Http2;
+    });
+});
 
 builder.Services.AddScoped<IEmailContext, EmailContext>();
 builder.Services.AddScoped<IEmailRepository, EmailRepository>();
