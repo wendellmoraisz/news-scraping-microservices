@@ -7,6 +7,9 @@ services:
   newsdb:
     image: mysql
     
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    
   emailsmanager.api:
     image: ${DOCKER_REGISTRY-}emailsmanagerapi
     build:

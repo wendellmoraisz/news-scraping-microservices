@@ -1,4 +1,5 @@
 using EmailManager.Grpc.Protos;
+using MassTransit;
 using Quartz;
 using WebScraper.Application.ScheduledJobs;
 using WebScraper.Application.Services;
@@ -14,6 +15,14 @@ builder.Services.ConfigurePersistence(builder.Configuration);
 builder.Services.AddScoped<EmailManagerGrpcService>();
 builder.Services.AddGrpcClient<EmailProtoService.EmailProtoServiceClient>
     (o => o.Address = new Uri(builder.Configuration["GrpcSettings:EmailUrl"] ?? string.Empty));
+builder.Services.AddMassTransit(config =>
+{
+    config.UsingRabbitMq((ctx, cfg) =>
+    {
+        cfg.Host(builder.Configuration["EventBusSettings:HostAddress"]);
+    });
+});
+builder.Services.AddMassTransitHostedService();
 
 var app = builder.Build();
 

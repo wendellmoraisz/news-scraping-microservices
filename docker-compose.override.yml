@@ -14,6 +14,13 @@ services:
       MYSQL_ROOT_PASSWORD: "password=s3nh4?!!"
     ports:
       - "6379:6379"
+      
+  rabbitmq:
+    container_name: rabbitmq
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
   
   emailsmanager.api:
     container_name: emailsmanager.api
@@ -34,8 +41,10 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - "ConnectionStrings__NewsDatabase=server=newsdb;database=news_scraping;user=root;password=s3nh4?!!"
       - "GrpcSettings__EmailUrl=http://emailsmanager.api"
+      - "EventBusSettings__HostAddress=amqp://guest:guest@rabbitmq:5672"
     depends_on:
       - newsdb
+      - rabbitmq
     ports:
       - "9001:80"
         

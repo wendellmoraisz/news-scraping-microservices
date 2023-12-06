@@ -7,11 +7,15 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Infrastructure\EventBus.Messages\EventBus.Messages.csproj" />
       <ProjectReference Include="..\WebScraper.Core\WebScraper.Core.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Grpc.AspNetCore" Version="2.59.0" />
+      <PackageReference Include="MassTransit" Version="7.3.0" />
+      <PackageReference Include="MassTransit.AspNetCore" Version="7.3.0" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.0" />
     </ItemGroup>
 
     <ItemGroup>

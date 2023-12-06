@@ -9,6 +9,7 @@ COPY ["Services/WebScraper/WebScraper.API/WebScraper.API.csproj", "Services/WebS
 COPY ["Services/WebScraper/WebScraper.Application/WebScraper.Application.csproj", "Services/WebScraper/WebScraper.Application/"]
 COPY ["Services/WebScraper/WebScraper.Core/WebScraper.Core.csproj", "Services/WebScraper/WebScraper.Core/"]
 COPY ["Services/WebScraper/WebScraper.Infrastructure/WebScraper.Infrastructure.csproj", "Services/WebScraper/Basket.Infrastructure/"]
+COPY ["Infrastructure/EventBus.Messages/EventBus.Messages.csproj", "Infrastructure/EventBus.Messages/"]
 
 RUN dotnet restore "Services/WebScraper/WebScraper.API/WebScraper.API.csproj"
 COPY . .
