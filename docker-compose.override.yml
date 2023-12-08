@@ -57,5 +57,8 @@ services:
       - SmtpOptions__Host=smtphost
       - SmtpOptions__Port=PORT
       - SmtpOptions__EnableSsl=true
+      - "EventBusSettings__HostAddress=amqp://guest:guest@rabbitmq:5672"
+    depends_on:
+      - rabbitmq
     ports:
       - "9002:80"

@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Infrastructure\EventBus.Messages\EventBus.Messages.csproj" />
       <ProjectReference Include="..\EmailSender.Core\EmailSender.Core.csproj" />
     </ItemGroup>
 
@@ -17,6 +18,10 @@
       <Content Include="obj\Debug\net7.0\EmailSender.Application.csproj.FileListAbsolute.txt" />
       <Content Include="obj\Debug\net7.0\EmailSender.Application.dll" />
       <Content Include="obj\rider.project.model.nuget.info" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
     </ItemGroup>
 
 </Project>

@@ -23,9 +23,18 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\..\Infrastructure\EventBus.Messages\EventBus.Messages.csproj" />
       <ProjectReference Include="..\EmailSender.Application\EmailSender.Application.csproj" />
       <ProjectReference Include="..\EmailSender.Core\EmailSender.Core.csproj" />
       <ProjectReference Include="..\EmailSender.Infrastructure\EmailSender.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="12.0.1" />
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+      <PackageReference Include="MassTransit" Version="7.3.0" />
+      <PackageReference Include="MassTransit.AspNetCore" Version="7.3.0" />
+      <PackageReference Include="MassTransit.RabbitMQ" Version="7.3.0" />
     </ItemGroup>
 
 </Project>
