@@ -9,15 +9,16 @@ namespace EmailSender.Infrastructure.Services;
 public class SendEmailService : ISendEmailService
 {
     private readonly SmtpClient _smtpClient;
+    private readonly SmtpOptions _smtpOptions;
     
     public SendEmailService(IOptions<SmtpOptions> options)
     {
-        var smtpOptions = options.Value;
-        _smtpClient = new SmtpClient(smtpOptions.Host)
+        _smtpOptions = options.Value;
+        _smtpClient = new SmtpClient(_smtpOptions.Host)
         {
-            Port = smtpOptions.Port,
-            Credentials = new NetworkCredential(smtpOptions.SenderCredentials.Email, smtpOptions.SenderCredentials.Password),
-            EnableSsl = smtpOptions.EnableSsl,
+            Port = _smtpOptions.Port,
+            Credentials = new NetworkCredential(_smtpOptions.SenderCredentials.Email, _smtpOptions.SenderCredentials.Password),
+            EnableSsl = _smtpOptions.EnableSsl,
         };
     }
     
@@ -28,7 +29,7 @@ public class SendEmailService : ISendEmailService
             var sendEmailsTasks = new List<Task>();
             foreach (var emailRecipient in email.Recipients)
             {
-                var mailMessage = new MailMessage(email.Sender.Email, emailRecipient, email.Subject, email.Content);
+                var mailMessage = new MailMessage(_smtpOptions.SenderCredentials.Email, emailRecipient, email.Subject, email.Body);
                 mailMessage.IsBodyHtml = email.IsBodyHtml;
                 sendEmailsTasks.Add(_smtpClient.SendMailAsync(mailMessage));
             }
