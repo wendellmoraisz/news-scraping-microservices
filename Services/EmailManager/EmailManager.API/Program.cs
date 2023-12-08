@@ -37,15 +37,11 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseRouting();
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapGrpcService<EmailService>();
-    endpoints.MapGet("/", async context =>
-    {
-        await context.Response.WriteAsync(
-            "Communication with gRPC endpoints must be made through a gRPC client.");
-    });
+app.MapGrpcService<EmailService>();
+app.MapGet("/", async context =>
+{ 
+    await context.Response.WriteAsync(
+        "Communication with gRPC endpoints must be made through a gRPC client.");
 });
 
 app.Run();
