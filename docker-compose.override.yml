@@ -34,6 +34,7 @@ services:
       - emailsdb
     ports:
       - "9000:80"
+      - "50055:50055"
         
   webscraper.api:
     container_name: webscraper.api
