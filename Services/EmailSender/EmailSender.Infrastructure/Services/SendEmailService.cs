@@ -26,22 +26,19 @@ public class SendEmailService : ISendEmailService
     {
         try
         {
-            var sendEmailsTasks = new List<Task>();
             foreach (var emailRecipient in email.Recipients)
             {
                 var mailMessage = new MailMessage(_smtpOptions.SenderCredentials.Email, emailRecipient, email.Subject, email.Body);
                 mailMessage.IsBodyHtml = email.IsBodyHtml;
-                sendEmailsTasks.Add(_smtpClient.SendMailAsync(mailMessage));
+                await _smtpClient.SendMailAsync(mailMessage);
             }
-            
-            await Task.WhenAll(sendEmailsTasks);
 
             Console.WriteLine("E-mails enviados com sucesso!");
         }
         
         catch (Exception ex)
         {
-            Console.WriteLine($"Erro ao enviar e-mail: {ex.Message}");
+            Console.WriteLine($"Erro ao enviar e-mail: {ex}");
         }
     }
 }
