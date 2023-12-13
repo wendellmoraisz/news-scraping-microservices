@@ -7,9 +7,9 @@ namespace EmailManager.Infrastructure.Repositories;
 
 public class EmailRepository : IEmailRepository
 {
-    private readonly EmailContext _context;
+    private readonly IEmailContext _context;
 
-    public EmailRepository(EmailContext context)
+    public EmailRepository(IEmailContext context)
     {
         _context = context;
     }
