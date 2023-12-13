@@ -63,3 +63,12 @@ services:
       - rabbitmq
     ports:
       - "9002:80"
+  
+  ocelotapigw:
+    container_name: ocelotapigw
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - emailsmanager.api
+    ports:
+      - "9010:80"

@@ -28,6 +28,12 @@ services:
       context: .
       dockerfile: Services/EmailSender/EmailSender.API/Dockerfile
       
+  ocelotapigw:
+    image: ${DOCKER_REGISTRY-}ocelotapigw
+    build:
+      context: .
+      dockerfile: ApiGateways/Ocelot.ApiGateway/Dockerfile
+      
 volumes:
   mongo_data:
   mysql_data:
