@@ -134,7 +134,7 @@ Navigate to project folder and run it using `docker-compose`
   $ docker-compose -f docker-compose.yml -f docker-compose.override.yml up --build
 
   # To run project
-  $docker-compose -f docker-compose.yml -f docker-compose.override.yml up
+  $ docker-compose -f docker-compose.yml -f docker-compose.override.yml up
 
 
 ```
