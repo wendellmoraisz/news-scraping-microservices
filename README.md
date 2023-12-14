@@ -23,11 +23,11 @@
 
 <h1 align="center">
   
-  <a href="https://github.com/wendellmoraisz">
+  <a target="_blank" href="https://github.com/wendellmoraisz">
     <img src="https://img.shields.io/static/v1?label=&message=wendellmoraisz&color=black&style=for-the-badge&logo=GITHUB"/>
   </a>
 
-  <a href="https://www.linkedin.com/in/wendell-morais/">
+  <a target="_blank" href="https://www.linkedin.com/in/wendell-morais/">
     <img src='https://img.shields.io/static/v1?label=&message=Wendell%20Morais&color=black&style=for-the-badge&logo=LinkedIn'/> 
   </a>
 
@@ -53,12 +53,12 @@
 | 🧩 Technologies and Concepts Used:
 </h2>
   
-> <a href='https://learn.microsoft.com/pt-br/dotnet/csharp/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" /> </a>&nbsp;&nbsp;&nbsp;
-<a href='https://dotnet.microsoft.com/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" /> </a>&nbsp;&nbsp;&nbsp;
- <a href='https://www.mysql.com/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /> </a>&nbsp;&nbsp;&nbsp;
- <a href='https://www.mongodb.com/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" /> </a>&nbsp;&nbsp;&nbsp;
- <a href='https://www.docker.com/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" /> </a>&nbsp;&nbsp;&nbsp;
-<a href='https://git-scm.com/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </a>&nbsp;&nbsp;&nbsp;
+> <a target="_blank" href='https://learn.microsoft.com/pt-br/dotnet/csharp/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" /> </a>&nbsp;&nbsp;&nbsp;
+<a target="_blank" href='https://dotnet.microsoft.com/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" /> </a>&nbsp;&nbsp;&nbsp;
+ <a target="_blank" href='https://www.mysql.com/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" /> </a>&nbsp;&nbsp;&nbsp;
+ <a target="_blank" href='https://www.mongodb.com/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" /> </a>&nbsp;&nbsp;&nbsp;
+ <a target="_blank" href='https://www.docker.com/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain-wordmark.svg" /> </a>&nbsp;&nbsp;&nbsp;
+<a target="_blank" href='https://git-scm.com/'> <img width="60px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" /> </a>&nbsp;&nbsp;&nbsp;
 
 <br>
 
@@ -87,8 +87,8 @@
 <br>
 
 <p>
- The Application has an Cron Job that extract news from <a href="https://altamira.ifpa.edu.br/ultimas-noticias">IFPA Campus Altamira News Site</a> with Web Scraping and
-  send the news via email for addresses registered in <a href="https://github.com/wendellmoraisz/emails-register-page">Emails Register Page</a>.
+ The Application has an Cron Job that extract news from <a target="_blank" href="https://altamira.ifpa.edu.br/ultimas-noticias">IFPA Campus Altamira News Site</a> with Web Scraping and
+  send the news via email for addresses registered in <a target="_blank" href="https://github.com/wendellmoraisz/emails-register-page">Emails Register Page</a>.
 </p>
 
 <p>
@@ -149,14 +149,14 @@ Navigate to project folder and run it using `docker-compose`
   | 🧑‍💻 Author:  
 </h2>
 
-> <a target="_blank" href="https://www.linkedin.com/in/samuel-ricardo/"> <img width="350px" src="https://instagram.fatm2-1.fna.fbcdn.net/v/t51.2885-15/364236795_658305826235139_7313126893555339390_n.heic?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyIn0&_nc_ht=instagram.fatm2-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=jiK3Jgp18FIAX9aCnzv&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzE1Nzk0NTg3NDE1MTgwODk2Mw%3D%3D.2-ccb7-5&oh=00_AfDXD8WG7oupvawPVKJ_nnXk94Nf27W7vYU3osKg4K79MA&oe=65808644&_nc_sid=ee9879"/> <br> <p> <b> - Wendell Morais</b> </p></a>
+> <a target="_blank" href="https://www.linkedin.com/in/wendell-morais/"> <img width="350px" src="https://instagram.fatm2-1.fna.fbcdn.net/v/t51.2885-15/364236795_658305826235139_7313126893555339390_n.heic?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyIn0&_nc_ht=instagram.fatm2-1.fna.fbcdn.net&_nc_cat=103&_nc_ohc=jiK3Jgp18FIAX9aCnzv&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzE1Nzk0NTg3NDE1MTgwODk2Mw%3D%3D.2-ccb7-5&oh=00_AfDXD8WG7oupvawPVKJ_nnXk94Nf27W7vYU3osKg4K79MA&oe=65808644&_nc_sid=ee9879"/> <br> <p> <b> - Wendell Morais</b> </p></a>
 
 <h1>
-  <a href='https://github.com/wendellmoraisz'>
+  <a target="_blank" href='https://github.com/wendellmoraisz'>
     <img src='https://img.shields.io/static/v1?label=&message=wendellmoraisz&color=black&style=for-the-badge&logo=GITHUB'> 
   </a>
   
-   <a href='https://www.linkedin.com/in/wendell-morais/'>
+   <a target="_blank" href='https://www.linkedin.com/in/wendell-morais/'>
     <img src='https://img.shields.io/static/v1?label=&message=Wendell%20Morais&color=black&style=for-the-badge&logo=LinkedIn'> 
   </a>
 </h1>
