@@ -1,7 +1,5 @@
 <p align="center"> 
-  <a href="https://spring.io/" target="_blank">
     <img width="200px" height="300px" src="https://i.imgur.com/aLQ3826.png"/>
-  </a> 
 </p>
 
 <h4 align="center" >🚀 News Scraping Microservices 🚀</h4>
