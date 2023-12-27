@@ -5,7 +5,7 @@
 <h4 align="center" >🚀 News Scraping Microservices 🚀</h4>
 
 <h4 align="center">
-  My solution for <a href="https://altamira.ifpa.edu.br/ target="_blank" >@IFPA</a> using C# and .NET Core 7 with Microservices Architecture to send via email news posted in intitute site
+  My solution for <a href="https://altamira.ifpa.edu.br/ target="_blank" >@IFPA</a> using C# and .NET with Microservices Architecture to send via email news posted in intitute site
 </h4>
 
 <p align="center">
